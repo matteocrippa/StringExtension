@@ -1,0 +1,6 @@
+framework module Pods_StringExtension_Example {
+  umbrella header "Pods-StringExtension_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -6,6 +6,7 @@
 //  Copyright (c) 2016 Matteo. All rights reserved.
 //
 
+import StringExtension
 import UIKit
 
 @UIApplicationMain
@@ -15,7 +16,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        // Override point for customization after application launch.
+
+        let testString = "Test string"
+        
+        print("is valid email? \(testString.isEmail)")
+        
+        print("is numeric? \(testString.isNumeric)")
+        
+        print("monogram: \(testString.monogram)")
+
+        print("omiss: \(testString.omiss)")
+        
+        
         return true
     }
 
