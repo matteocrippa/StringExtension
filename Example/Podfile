@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'StringExtension_Example' do
+  pod 'StringExtension', :path => '../'
+
+  target 'StringExtension_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
