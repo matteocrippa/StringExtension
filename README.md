@@ -57,7 +57,7 @@ pod "StringExtension"
 
 ## Author
 
-Matteo, matteo@boostco.de
+Matteo Crippa, @ghego20
 
 ## License
 
