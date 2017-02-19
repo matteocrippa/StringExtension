@@ -8,6 +8,11 @@
 
 public extension String {
     
+    // MARK: - Localization
+    var localized: String {
+        return NSLocalizedString(self, comment: "")
+    }
+    
     // MARK: - Numeric
     var isNumeric: Bool {
         
@@ -35,7 +40,7 @@ public extension String {
         }
     }
     
-    // MARK: - Mnogram generator
+    // MARK: - Monogram generator
     subscript (i: Int) -> String {
         return self.substring(with: self.startIndex..<self.characters.index(self.startIndex, offsetBy: i + 1))
     }
