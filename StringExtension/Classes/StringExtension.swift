@@ -87,9 +87,9 @@ public extension String {
         var blue: CGFloat = 0.0
         var alpha: CGFloat = 1.0
 
-        if rgba.hasPrefix("#") {
-            let index   = rgba.characters.index(rgba.startIndex, offsetBy: 1)
-            let hex     = rgba.substring(from: index)
+        if self.hasPrefix("#") {
+            let index   = self.characters.index(self.startIndex, offsetBy: 1)
+            let hex     = self.substring(from: index)
             let scanner = Scanner(string: hex)
             var hexValue: CUnsignedLongLong = 0
             if scanner.scanHexInt64(&hexValue) {
