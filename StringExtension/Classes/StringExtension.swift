@@ -12,6 +12,9 @@ public extension String {
     var localized: String {
         return NSLocalizedString(self, comment: "")
     }
+    func localize(with params: CVarArg...) -> String {        
+        return String(format: self.localized, params)
+    }
     
     // MARK: - Numeric
     var isNumeric: Bool {
