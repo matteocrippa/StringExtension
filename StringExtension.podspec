@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'StringExtension'
-  s.version          = '0.1.0'
+  s.version          = '0.2.0'
   s.summary          = 'A swift String extension.'
 
   s.description      = <<-DESC
@@ -17,5 +17,5 @@ Some useful String extension for Swift.
   s.tvos.deployment_target = '9.0'
 
   s.source_files = 'StringExtension/Classes/**/*'
-  
+
 end
